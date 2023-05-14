@@ -8,10 +8,9 @@ public class CVVDigitValidation implements Validation {
 
 	@Override
 	public boolean IsValid(Payment payment) {
-		String CVV = Integer.toString(payment.CVV);
 		Pattern p = Pattern.compile(regex);
-		Matcher m = p.matcher(CVV);
-		if (CVV == null) {
+		Matcher m = p.matcher(payment.CVV);
+		if (payment.CVV == null) {
 			return false;
 		}
 		return m.matches();

@@ -37,7 +37,7 @@ public class Main {
 			payment.ExpiryDate = expiryDate;
 
 			System.out.print("CVV: ");
-			int digitCVV = scanner.nextInt();
+			String digitCVV = scanner.next();
 			payment.CVV = digitCVV;
 
 			if (!amountValidation.IsValid(payment)) {

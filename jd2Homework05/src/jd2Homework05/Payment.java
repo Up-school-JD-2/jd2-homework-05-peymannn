@@ -4,6 +4,6 @@ public class Payment {
 	String Amount;
 	String CardNumber;
 	String ExpiryDate;
-	int CVV;
+	String CVV;
 
 }
